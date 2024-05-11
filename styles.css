@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #050047;
+    background-color: #040127;
     margin: 0;
     padding: 0;
 }
@@ -17,7 +17,7 @@ body {
     width: 90%;
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgb(250, 250, 250);
+    box-shadow: 0 5px 18px rgb(143, 132, 255);
     padding: 20px;
 }
 
@@ -49,6 +49,31 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 3px 3px 6px rgba(85, 158, 253, 0.877); /* Initial shadow */
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    box-shadow: none; /* Remove shadow when clicked */
+}
+
+button:hover {
+    background-color: #062846;
+}
+
+
+/* button {
+    width: 100%;
+    background-color: #003d7e;
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -62,7 +87,7 @@ button:active {
 
 button:hover {
     background-color: #21384e;
-}
+} */
 
 #result {
     margin-top: 20px;
